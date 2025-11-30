@@ -26,7 +26,7 @@ export function AddEventsPanelRow({foods, food, render, deleteSelf}: AddEventsPa
     return (
         <>
             <tr key={foodTemplate.current.id}>
-                <td className="whitespace-nowrap w-full pr-1">
+                <td className="sm:w-[200px] w-full whitespace-normal break-words">
                     <FuzzySearch<TblUserFood>
                         query={foodTemplate.current.name}
                         onQueryChange={(q) => {
